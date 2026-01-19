@@ -159,7 +159,11 @@ def main():
         collected = []
 
         for source_name, url in feed_list:
-            parsed = feedparser.parse(url)
+            try:
+                parsed = feedparser.parse(url)
+            except Exception:
+                # Some feeds occasionally drop connections; skip quietly
+                continue
 
             # If a feed errors, just skip it quietly (no spiraling)
             if getattr(parsed, "bozo", 0) == 1 and not getattr(parsed, "entries", None):
