@@ -33,10 +33,15 @@ FEEDS = {
     "Canada News": [
         ("CBC", "https://www.cbc.ca/webfeed/rss/rss-canada"),
     ],
-    "Sports (NHL/MLB/NFL)": [
+    "Sports (Oilers + NHL — real news)": [
+        ("Sportsnet", "https://www.sportsnet.ca/feed/"),
+        ("TSN", "https://www.tsn.ca/rss"),
         ("NHL", "http://www.nhl.com/rss/news.xml"),
-        ("ESPN", "https://www.espn.com/espn/rss/news"),
-        ("The Hockey Writers", "https://thehockeywriters.com/feed/"),
+    ],
+
+    "Sports Blogs (Oilers)": [
+        ("Lowetide", "https://lowetide.ca/feed/"),
+        ("Oilersnation", "https://oilersnation.com/feed/"),
     ],
     "AI Tech (assistants + robots)": [
         ("BBC", "http://feeds.bbci.co.uk/news/technology/rss.xml"),
