@@ -9,7 +9,7 @@ import feedparser
 # Settings (you can tweak)
 # -----------------------
 TIMEZONE = "America/Edmonton"
-LAST_RUN_FILE = "last_run.txt"
+LAST_RUN_FILE = None
 
 MAX_ITEMS_PER_SECTION = 8  # keep it tight to prevent spirals
 MAX_BULLETS = 3            # per item
